@@ -1,19 +1,15 @@
-/* About Us Section */
-#about {
-    background-color: #e3e3e3;
-    padding: 30px;
-    border-radius: 8px;
-    text-align: center;
-}
-
-#about p {
+/* CTA Button Styles */
+.cta-button {
+    background-color: #ff6347;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
     font-size: 1.2rem;
-    color: #666;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.about-img {
-    width: 100%;
-    height: auto;
-    margin-top: 20px;
-    border-radius: 8px;
+.cta-button:hover {
+    background-color: #ff4500;
 }
