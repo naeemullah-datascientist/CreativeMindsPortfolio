@@ -1,15 +1,20 @@
-/* Responsive Design */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2rem;
-    }
+/* Form Styles */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
 
-    nav ul li {
-        margin: 0 10px;
-    }
+input[type="submit"] {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
 
-    .cta-button {
-        padding: 10px 20px;
-        font-size: 1rem;
-    }
+input[type="submit"]:hover {
+    background-color: #ff4500;
 }
