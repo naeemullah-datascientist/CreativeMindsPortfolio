@@ -9,13 +9,14 @@
 </head>
 <body>
     <header>
+        <img src="assets/logo.png" alt="Creative Minds Logo" id="logo"> <!-- Change 1: Added logo -->
         <h1>Welcome to Creative Minds</h1>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#" class="nav-link">Home</a></li> <!-- Change 2: Updated navigation link -->
+                <li><a href="#" class="nav-link">About</a></li>
+                <li><a href="#" class="nav-link">Services</a></li>
+                <li><a href="#" class="nav-link">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -24,6 +25,7 @@
         <section id="about">
             <h2>About Us</h2>
             <p>We are Creative Minds, a leading design agency that turns ideas into beautiful designs.</p>
+            <img src="assets/about-image.jpg" alt="About Us" class="about-img"> <!-- Change 4: Added image -->
         </section>
 
         <section id="services">
@@ -39,11 +41,17 @@
             <h2>Contact Us!</h2>
             <p>Email: contact@creativeminds.com</p>
             <p>Phone: +123-456-7890</p>
+            <button class="cta-button">Get in Touch</button> <!-- Change 3: Added button -->
         </section>
     </main>
 
     <footer>
         <p>&copy; 2024 Creative Minds. All rights reserved.</p>
+        <ul class="social-links"> <!-- Change 5: Added footer links -->
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
     </footer>
 
     <script src="script.js"></script>
