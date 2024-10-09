@@ -1,5 +1,5 @@
-// Smooth Scroll for navigation links
-document.querySelectorAll('a.nav-link').forEach(anchor => {
+// Smooth scrolling for navigation
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
         document.querySelector(this.getAttribute('href')).scrollIntoView({
@@ -7,16 +7,9 @@ document.querySelectorAll('a.nav-link').forEach(anchor => {
         });
     });
 });
+
 // Sticky Navbar
-window.onscroll = function() {stickyNavbar()};
-
-const navbar = document.querySelector('nav');
-const sticky = navbar.offsetTop;
-
-function stickyNavbar() {
-    if (window.pageYOffset >= sticky) {
-        navbar.classList.add('sticky');
-    } else {
-        navbar.classList.remove('sticky');
-    }
-}
+window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('.navbar');
+    navbar.classList.toggle('sticky', window.scrollY > 0);
+});

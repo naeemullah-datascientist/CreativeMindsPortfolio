@@ -1,199 +1,88 @@
-/* Base Typography and Layout */
+/* Base Typography */
 body {
     font-family: 'Arial', sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
 }
 
-h1, h2 {
-    color: #333;
+/* Navigation */
+.navbar {
+    background-color: #333;
+    padding: 10px 0;
 }
 
-h1 {
-    font-size: 3rem; /* Updated */
-    font-weight: bold; /* Updated */
-    color: #ff6347; /* Optional color change */
-    margin-top: 10px;
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
     letter-spacing: 2px;
 }
 
-p {
-    font-size: 1.1rem;
-    color: #666;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-a {
-    text-decoration: none;
-    color: #333;
-}
-
-/* Header Styling */
-header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-}
-
-header img#logo {
-    width: 120px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-header nav ul {
+.navbar .nav-links {
+    list-style: none;
     display: flex;
-    justify-content: center;
-    padding: 0;
 }
 
-header nav ul li {
+.navbar .nav-links li {
     margin: 0 15px;
 }
 
-header nav ul li a.nav-link {
-    color: white;
-    font-size: 1.1rem;
-    transition: color 0.3s;
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
 }
 
-header nav ul li a.nav-link:hover {
-    color: #ff6347;
-}
-
-/* Main Sections */
-main {
-    padding: 20px;
-}
-
-section {
-    margin-bottom: 40px;
-}
-
-section#about {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+/* Hero Section */
+.hero-section {
+    background: url('assets/hero-bg.jpg') center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
     text-align: center;
 }
 
-section#about .about-img {
-    width: 80%;
-    height: auto;
-    margin-top: 20px;
-    border-radius: 8px;
+.hero-section h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
 }
 
-section#services ul {
-    display: flex;
-    justify-content: space-around;
+.hero-section p {
+    font-size: 20px;
+    margin-bottom: 30px;
 }
 
-section#services ul li {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Call-to-Action Button */
 .cta-button {
-    display: inline-block;
-    background-color: #ff6347;
-    color: white;
+    background-color: #ff6f61;
+    color: #fff;
     padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    margin-top: 20px;
+    border: none;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 5px;
 }
 
 .cta-button:hover {
-    background-color: #ff4500;
+    background-color: #ff4f41;
 }
 
-/* Footer Styling */
-footer {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-footer ul.social-links {
-    display: flex;
-    justify-content: center;
-    padding: 0;
-}
-
-footer ul.social-links li {
-    margin: 0 10px;
-}
-
-footer ul.social-links li a {
-    color: white;
-    font-size: 1.5rem;
-    transition: color 0.3s;
-}
-
-footer ul.social-links li a:hover {
-    color: #ff6347;
-}
-
-/* Responsive Design */
+/* Responsive Layout */
 @media (max-width: 768px) {
-    header nav ul {
-        flex-direction: column;
+    .hero-section h1 {
+        font-size: 40px;
     }
-
-    section#services ul {
-        flex-direction: column;
+    .hero-section p {
+        font-size: 18px;
     }
-
-    .cta-button {
-        width: 100%;
-        padding: 15px 0;
-    }
-}
-
-/* Form Styling */
-input[type="text"], input[type="email"], textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-button[type="submit"] {
-    background-color: #ff6347;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button[type="submit"]:hover {
-    background-color: #ff4500;
-}
-
-/* Final Polishing: Shadows and Transitions */
-section {
-    transition: box-shadow 0.3s ease;
-}
-
-section:hover {
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
