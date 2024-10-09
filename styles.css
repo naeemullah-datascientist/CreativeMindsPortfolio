@@ -1,88 +1,117 @@
-/* Base Typography */
+/* Base styles */
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-color: #f7f7f7; /* Light gray background */
 }
 
-/* Navigation */
-.navbar {
-    background-color: #333;
-    padding: 10px 0;
+/* Header styles */
+header {
+    background-color: #4CAF50; /* Green background for header */
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
 
-.navbar .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+h1 {
+    font-size: 2.5em;
+    font-weight: bold; /* Make the header bold */
 }
 
-.navbar .logo {
-    color: #fff;
-    font-size: 24px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-.navbar .nav-links {
+/* Navigation styles */
+nav ul {
     list-style: none;
-    display: flex;
+    padding: 0;
 }
 
-.navbar .nav-links li {
+nav ul li {
+    display: inline;
     margin: 0 15px;
 }
 
-.navbar .nav-links a {
-    color: #fff;
+.nav-link {
+    color: white;
     text-decoration: none;
-    font-size: 16px;
 }
 
-/* Hero Section */
-.hero-section {
-    background: url('assets/hero-bg.jpg') center/cover no-repeat;
-    height: 100vh;
+/* Main section styles */
+main {
+    padding: 20px;
+}
+
+/* About section styles */
+#about {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about-img {
+    width: 80%;
+    max-width: 600px;
+}
+
+/* Services section styles */
+#services {
+    margin-bottom: 40px;
+}
+
+/* Explore Our Services section styles */
+#explore-services {
+    margin-bottom: 40px;
+}
+
+#explore-services ul {
+    list-style: none;
+    padding: 0;
+}
+
+#explore-services ul li {
     display: flex;
     align-items: center;
-    justify-content: center;
-    color: #fff;
+    margin: 10px 0;
+}
+
+#explore-services img {
+    width: 50px; /* Set a fixed size for images */
+    margin-right: 10px;
+}
+
+/* Contact section styles */
+#contact {
     text-align: center;
 }
 
-.hero-section h1 {
-    font-size: 50px;
-    margin-bottom: 20px;
-}
-
-.hero-section p {
-    font-size: 20px;
-    margin-bottom: 30px;
-}
-
+/* Button styles */
 .cta-button {
-    background-color: #ff6f61;
-    color: #fff;
+    background-color: #008CBA; /* Blue button */
+    color: white;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
-    font-size: 18px;
-    text-transform: uppercase;
-    border-radius: 5px;
 }
 
 .cta-button:hover {
-    background-color: #ff4f41;
+    background-color: #005f73; /* Darker blue on hover */
 }
 
-/* Responsive Layout */
-@media (max-width: 768px) {
-    .hero-section h1 {
-        font-size: 40px;
-    }
-    .hero-section p {
-        font-size: 18px;
-    }
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+}
+
+.social-links li {
+    display: inline;
+    margin: 0 10px;
 }

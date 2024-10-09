@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Creative Minds Portfolio</title>
     <link rel="stylesheet" href="styles.css">
@@ -9,89 +10,60 @@
 </head>
 <body>
     <header>
-        <nav class="navbar">
-            <div class="container">
-                <a href="#" class="logo">Creative Minds</a>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
+        <img src="assets/logo.png" alt="Creative Minds Logo" id="logo">
+        <h1>Welcome to Creative Minds</h1>
+        <nav>
+            <ul>
+                <li><a href="#" class="nav-link">Home</a></li>
+                <li><a href="#" class="nav-link">About</a></li>
+                <li><a href="#" class="nav-link">Services</a></li>
+                <li><a href="#" class="nav-link">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
-    <section id="hero" class="hero-section">
-        <div class="hero-content">
-            <h1>Unleashing Creativity, Building the Future</h1>
-            <p>Your vision, our design. Together, we create experiences that matter.</p>
-            <a href="#services" class="cta-button">Explore Our Services</a>
-        </div>
-    </section>
-
-    <section id="about" class="about-section">
-        <div class="container">
+    <main>
+        <section id="about">
             <h2>About Us</h2>
-            <p>Creative Minds is a leading design agency that thrives on transforming ideas into beautiful digital experiences.</p>
-        </div>
-    </section>
+            <p>We are Creative Minds, a leading design agency that turns ideas into beautiful designs.</p>
+            <button class="cta-button">Learn More</button>
+            <img src="assets/about-image.jpg" alt="About Us" class="about-img">
+        </section>
 
-    <section id="services" class="services-section">
-        <div class="container">
+        <section id="services">
             <h2>Our Services</h2>
-            <div class="service-item">
-                <i class="fas fa-laptop-code"></i>
-                <h3>Web Development</h3>
-                <p>From concept to deployment, we design websites that stand out.</p>
-            </div>
-            <div class="service-item">
-                <i class="fas fa-paint-brush"></i>
-                <h3>Graphic Design</h3>
-                <p>Crafting visually stunning graphics to boost your brand's identity.</p>
-            </div>
-            <div class="service-item">
-                <i class="fas fa-chart-line"></i>
-                <h3>Marketing & Branding</h3>
-                <p>Creating strategies that capture attention and drive conversions.</p>
-            </div>
-        </div>
-    </section>
+            <ul>
+                <li>Web Design</li>
+                <li>Graphic Design</li>
+                <li>Branding</li>
+            </ul>
+        </section>
 
-    <section id="testimonials" class="testimonials-section">
-        <div class="container">
-            <h2>What Our Clients Say</h2>
-            <div class="testimonial">
-                <p>"Creative Minds truly transformed our business with their outstanding web design!" - Client A</p>
-            </div>
-            <div class="testimonial">
-                <p>"Their team is full of innovative ideas, and they deliver exactly what they promise." - Client B</p>
-            </div>
-        </div>
-    </section>
+        <section id="explore-services">
+            <h2>Explore Our Services</h2>
+            <p>At Creative Minds, we offer a range of services tailored to meet your needs. From web design to branding, our team is here to help you succeed.</p>
+            <ul>
+                <li><img src="assets/service1.jpg" alt="Web Design"> Professional Web Design</li>
+                <li><img src="assets/service2.jpg" alt="Graphic Design"> Stunning Graphic Design</li>
+                <li><img src="assets/service3.jpg" alt="Branding"> Creative Branding Solutions</li>
+            </ul>
+        </section>
 
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <form>
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit" class="cta-button">Send Message</button>
-            </form>
-        </div>
-    </section>
+        <section id="contact">
+            <h2>Contact Us!</h2>
+            <p>Email: contact@creativeminds.com</p>
+            <p>Phone: +123-456-7890</p>
+            <button class="cta-button">Get in Touch</button>
+        </section>
+    </main>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2024 Creative Minds. All Rights Reserved.</p>
-            <ul class="social-links">
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-            </ul>
-        </div>
+        <p>&copy; 2024 Creative Minds. All rights reserved.</p>
+        <ul class="social-links">
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
     </footer>
 
     <script src="script.js"></script>
