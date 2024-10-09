@@ -1,117 +1,172 @@
-/* Base styles */
+/* Global Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff; /* Light blue background */
     margin: 0;
     padding: 0;
-    background-color: #f7f7f7; /* Light gray background */
+    color: #333;
 }
 
-/* Header styles */
+h1, h2 {
+    color: #333;
+}
+
+/* Header */
 header {
-    background-color: #4CAF50; /* Green background for header */
-    color: white;
-    text-align: center;
+    background-color: #4caf50; /* Green header */
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-h1 {
-    font-size: 2.5em;
-    font-weight: bold; /* Make the header bold */
+header img#logo {
+    height: 60px;
 }
 
-/* Navigation styles */
+header h1 {
+    color: white;
+    font-size: 24px;
+}
+
 nav ul {
     list-style: none;
-    padding: 0;
+    display: flex;
+    gap: 15px;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-.nav-link {
+nav a.nav-link {
     color: white;
     text-decoration: none;
+    font-size: 18px;
 }
 
-/* Main section styles */
+nav a.nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Main Sections */
 main {
+    padding: 40px;
+}
+
+section {
+    background-color: #ffffff; /* White section background */
     padding: 20px;
-}
-
-/* About section styles */
-#about {
-    text-align: center;
     margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
-.about-img {
-    width: 80%;
-    max-width: 600px;
-}
-
-/* Services section styles */
-#services {
-    margin-bottom: 40px;
-}
-
-/* Explore Our Services section styles */
-#explore-services {
-    margin-bottom: 40px;
-}
-
-#explore-services ul {
-    list-style: none;
-    padding: 0;
-}
-
-#explore-services ul li {
+section#about {
     display: flex;
     align-items: center;
-    margin: 10px 0;
 }
 
-#explore-services img {
-    width: 50px; /* Set a fixed size for images */
-    margin-right: 10px;
+section#about p {
+    flex: 1;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-right: 20px;
 }
 
-/* Contact section styles */
-#contact {
-    text-align: center;
+section#about img.about-img {
+    width: 300px;
+    border-radius: 10px;
 }
 
-/* Button styles */
 .cta-button {
-    background-color: #008CBA; /* Blue button */
+    background-color: #ff6f61;
     color: white;
     padding: 10px 20px;
     border: none;
+    border-radius: 5px;
+    font-size: 16px;
     cursor: pointer;
 }
 
 .cta-button:hover {
-    background-color: #005f73; /* Darker blue on hover */
+    background-color: #e65c4f;
 }
 
-/* Footer styles */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+/* Service Section with Images */
+.service-img {
+    width: 50px;
+    height: auto;
+    margin-left: 10px;
 }
 
-.social-links {
+section#services ul {
     list-style: none;
     padding: 0;
 }
 
-.social-links li {
-    display: inline;
+section#services li {
+    font-size: 18px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+/* Footer */
+footer {
+    background-color: #333; /* Dark footer */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer ul.social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+footer ul.social-links li {
     margin: 0 10px;
+}
+
+footer ul.social-links a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+footer ul.social-links a:hover {
+    color: #ff6f61;
+}
+
+/* Explore Our Services Section */
+#services h2 {
+    color: #4caf50;
+}
+
+#services ul {
+    margin-top: 20px;
+}
+
+#services li {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    section#about {
+        flex-direction: column;
+    }
+
+    section#about img.about-img {
+        margin-top: 20px;
+        width: 100%;
+    }
 }
